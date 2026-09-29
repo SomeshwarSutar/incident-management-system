@@ -14,7 +14,7 @@ class IncidentService:
         incident = Incident(
             title=request.title,
             description=request.description,
-            severity=request.severity
+            priority=request.priority
         )
 
         return self.repository.create(db, incident)
